@@ -8,6 +8,8 @@
                 <field name="success"/>
                 <field name="ip_address"/>
                 <field name="timestamp"/>
+                <field name="user_agent"/>
+                <field name="referrer"/>
             </tree>
         </field>
     </record>
@@ -23,6 +25,8 @@
                         <field name="success"/>
                         <field name="ip_address"/>
                         <field name="timestamp"/>
+                        <field name="user_agent"/>
+                        <field name="referrer"/>
                     </group>
                 </sheet>
             </form>

@@ -12,6 +12,8 @@ class RedirectController(http.Controller):
             'url_id': None,
             'success': False,
             'ip_address': request.httprequest.remote_addr,
+            'user_agent': request.httprequest.user_agent.string,
+            'referrer': request.httprequest.referrer
         }
 
         return_request = request.not_found()
