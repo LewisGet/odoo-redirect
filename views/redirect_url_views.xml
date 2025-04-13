@@ -31,6 +31,13 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_redirect_log" model="ir.actions.act_window">
+        <field name="name">Redirect URLs</field>
+        <field name="res_model">redirect.url</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="menu_redirect_root" name="Redirect URLs"/>
     <menuitem id="menu_redirect_urls" name="URLs" parent="menu_redirect_root" action="action_redirect_url"/>
+    <menuitem id="menu_redirect_logs" name="logs" parent="menu_redirect_root" action="action_redirect_log"/>
 </odoo>
