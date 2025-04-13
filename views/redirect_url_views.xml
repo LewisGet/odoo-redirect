@@ -39,5 +39,4 @@
 
     <menuitem id="menu_redirect_root" name="Redirect URLs"/>
     <menuitem id="menu_redirect_urls" name="URLs" parent="menu_redirect_root" action="action_redirect_url"/>
-    <menuitem id="menu_redirect_logs" name="logs" parent="menu_redirect_root" action="action_redirect_log"/>
 </odoo>
