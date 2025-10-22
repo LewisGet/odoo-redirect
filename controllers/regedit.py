@@ -23,7 +23,9 @@ class RedirectController(http.Controller):
             log_data['success'] = True
             return_request = request.redirect(redirect_url.target_url)
 
-            if redirect_url.target_url.startswith("http://") or redirect_url.target_url.startswith("https://"):
+            to_url = redirect_url.target_url
+
+            if to_url.startswith(("http://", "https://")):
                 return_request = redirect(redirect_url.target_url)
 
         request.env['redirect.log'].sudo().create(log_data)
